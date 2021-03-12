@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.8em;
+    font-family: 'Lora', serif;
+    overflow-x: hidden;
+}
+#wrapper {
+    position: absolute;
+    z-index: 200;
+}
+#siteNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#siteNav ul li {
+    display: inline;
+}
+#siteNav ul li a {
+    padding: 10px 20px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.current {
+    border: 1px #fff solid;
+}
+#siteNav ul li a:hover {
+    background: #aaa;
+    color: #333;
+}
+header {
+    padding: 20px 0;
+    width: 70%;
+    margin: 0 auto;
+    height: 100vmin;
+}
+.logo {
+    float: left;
+    width: 200px;
+}
+.logo img {
+    max-width: 150px;
+}
+.menu {
+    float: right;
+    padding: 10px;
+    text-align: right;
+}
+.featured {
+    clear: both;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(220, 220, 220);
+    display: grid;
+}
+.section-head {
+    padding: 50px 25% 30px 25%;
+    text-align: center;
+}
+.section-head .intro {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #ccc;
+}
+.section-head h2 {
+    text-transform: uppercase;
+    font-size: 3.2em;
+    color: #999;
+}
+.section-head .sub {
+    font-style: italic;
+    font-size: 1.7em;
+    color: #333;
+}
+.section-head h3::before {
+    content: "";
+    display: block;
+    margin: 0 auto 20px;
+    width: 100px;
+    border-top: 3px solid #000;
+}
+.section-head h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #333;
+}
+.grid-3-col {
+    width: 70%;
+    margin: 60px auto 80px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 50px;
+}
+.grid-3-col h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.button {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #333;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px #333 solid;
+    transition: all 0.5s;
+}
+.button:hover {
+    background: #333;
+    color: #fff;
+}
+.cell {
+    /*
+    background-color: rgb(220, 220, 220);
+    height: 200px;
+*/
+    padding: 10px;
+    text-align: center;
+}
+.news .cell {
+    text-align: left;
+    color: #333;
+}
+.date {
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+.grid-3-col .cell img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 50%;
+}
+.grid-4-col {
+    width: 70%;
+    margin: 20px auto 80px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 50px;
+}
